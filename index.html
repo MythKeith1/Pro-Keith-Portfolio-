@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exquisite Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger">&#9776;</div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <h1>Fast, Conversion-Driven Websites in <span>48 Hours</span></h1>
+      <p>I blend creativity with strategy to build sites that engage and convert.</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://source.unsplash.com/600x500/?technology,web" alt="Web Design">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web designer and developer with a focus on speed, aesthetics, and conversion. 
+      My mission is to deliver professional websites that don’t just look great but also drive measurable 
+      results for businesses. With experience across multiple industries, I ensure each project aligns with 
+      your goals while staying stylish, engaging, and user-friendly across devices.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://source.unsplash.com/400x300/?business,website" alt="Business Website">
+        <h3>Business Website</h3>
+      </div>
+      <div class="project-card">
+        <img src="https://source.unsplash.com/400x300/?portfolio,design" alt="Portfolio">
+        <h3>Portfolio Design</h3>
+      </div>
+      <div class="project-card">
+        <img src="https://source.unsplash.com/400x300/?startup,tech" alt="Startup Project">
+        <h3>Startup Project</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <input type="text" id="name" required placeholder="Your Name">
+        <small class="error">Name is required</small>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" required placeholder="Your Email">
+        <small class="error">Enter a valid email</small>
+      </div>
+      <div class="form-group">
+        <textarea id="message" required placeholder="Your Message"></textarea>
+        <small class="error">Message cannot be empty</small>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+      <div class="success">✔ Message sent successfully!</div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
